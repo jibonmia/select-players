@@ -113,4 +113,11 @@ body{
     margin-left: 20px;
     margin-right: 20px;
 }
-
+hr{
+    margin-top: 50px;
+    width: 800px;
+}
+footer{
+    color: white;
+    text-align: center;
+}
