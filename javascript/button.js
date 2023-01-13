@@ -28,3 +28,33 @@ document.getElementById('btn-5').addEventListener('click', function(){
 document.getElementById('btn-6').addEventListener('click', function(){
     getElementByValue('renato');
 })
+
+// per budget
+function getInputByValue(even){
+    const perInput = document.getElementById(even);
+    const perInputString = perInput.value;
+    const perValue = parseFloat(perInputString);
+    return perValue;
+}
+
+document.getElementById('btn-per').addEventListener('click', function(){
+    const pervalue = getInputByValue('par-input');
+
+    const selectContainer = document.getElementById('list-container');
+    const leadth = selectContainer.children.length;
+    const perPlayer = leadth*pervalue;
+
+    const playerExp = document.getElementById('player-exp');
+    playerExp.innerText = perPlayer;
+})
+
+document.getElementById('btn-total').addEventListener('click', function total(){
+    let playerExpenses = document.getElementById('player-exp').innerText;
+    const managerInput = getInputByValue('manager-input');
+    const coachInput = getInputByValue('coach-input');
+
+    let total =(Number(playerExpenses) + managerInput + coachInput);
+
+    let totalAmount = document.getElementById('total');
+    totalAmount.innerText = total;
+})
