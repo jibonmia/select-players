@@ -28,7 +28,6 @@ document.getElementById('btn-5').addEventListener('click', function(){
 document.getElementById('btn-6').addEventListener('click', function(){
     getElementByValue('renato');
 })
-
 // per budget
 function getInputByValue(even){
     const perInput = document.getElementById(even);
