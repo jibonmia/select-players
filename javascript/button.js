@@ -28,6 +28,18 @@ document.getElementById('btn-5').addEventListener('click', function(){
 document.getElementById('btn-6').addEventListener('click', function(){
     getElementByValue('renato');
 })
+document.getElementById('btn-7').addEventListener('click', function(){
+    getElementByValue('messi_1');
+    console.log("sad7");
+})
+document.getElementById('btn-8').addEventListener('click', function(){
+    getElementByValue('naymar_2');
+    console.log("sad8");
+})
+document.getElementById('btn-9').addEventListener('click', function(){
+    getElementByValue('mbappe_3');
+    console.log("sad9");
+})
 // per budget
 function getInputByValue(even){
     const perInput = document.getElementById(even);
