@@ -1,0 +1,27 @@
+@media only screen and (max-width: 576px) {
+    .text h1{
+        font-size: 15px;
+    }
+    .text p{
+        font-size: 5px;
+    }
+    .container{
+        margin-bottom: 20px;
+    }
+    .items-and-summery{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+    .card{
+    flex-direction: column;
+    align-items: center;
+    }  
+    .summery{
+    align-items: center;
+    }
+    hr{
+    width: 200px;
+    }
+}
